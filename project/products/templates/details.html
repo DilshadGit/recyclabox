@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="container">
+	<div class="row">
+      <div class="col-md-4">
+			
+			<h4 class="my-0 font-weight-normal">Name: {{ obj.name }}</h4>
+		
+				<p>Quantity: {{ obj.qty }}</p>
+				<p>Price: {{ obj.price }}</p>
+		
+				<a href="{% url 'products:item_list' %}" type="button" class="btn btn-lg btn-block btn-outline-primary" >
+				back
+			</a>
+			
+		</div>
+	</div>
+</div>
+{% endblock content %}
