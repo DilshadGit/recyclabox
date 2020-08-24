@@ -49,7 +49,3 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 
 # To run dockerfile (docker build -t ecomma -f Dockerfile .)
-
-# Run the application:
-COPY myapp.py .
-CMD ["python", "myapp.py"]
